@@ -5,7 +5,7 @@ import notify
 # declare the consumer
 def Consumer():
 
-    params = pika.URLParameters("amqps://yxqtjffp:x5EMaWMA_MtzVqh3Xmrl7MqU7-6RVVuO@whale.rmq.cloudamqp.com/yxqtjffp") #replace with env placeholder
+    params = pika.URLParameters("") #replace with env placeholder
     
     conn = pika.BlockingConnection(parameters=params)
     channel = conn.channel()
